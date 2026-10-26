@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#14181a">
+  <title>Mesa de la Isla</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Alegreya+Sans:wght@400;500;700&display=swap">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="setup">
+  <header class="mast">
+    <h1>Mesa de la Isla</h1>
+    <p>Prepara el encuentro: quién juega, qué enemigos aparecen y sobre qué mapa.</p>
+  </header>
+
+  <section>
+    <div class="sec-h"><h2>Jugadores</h2><span id="pcount"></span></div>
+    <div class="players" id="players"></div>
+  </section>
+
+  <section>
+    <div class="sec-h"><h2>Mapas</h2><span id="mapcount"></span></div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section>
+    <div class="sec-h"><h2>Enemigos</h2><button class="btn small danger" id="eclear" hidden>Quitar todos</button></div>
+    <div id="eformSetup"></div>
+    <div class="elist" id="elist"></div>
+  </section>
+
+  <div class="startbar"><button class="btn primary" id="start">Ir al mapa</button></div>
+</div>
+
+<div id="game" hidden>
+  <div class="tbar">
+    <button class="btn small" id="back">‹ Preparar</button>
+    <span class="ttl">Mesa de la Isla</span>
+    <button class="btn small" id="maps">Mapas</button>
+    <button class="btn small" id="gridtog" aria-pressed="true">Rejilla</button>
+    <button class="btn small" id="gridcfg">Ajustar celdas</button>
+    <button class="btn small" id="addenemy">+ Enemigo</button>
+    <button class="btn small" id="rot">↻ Girar</button>
+    <button class="btn small" id="fit">Centrar</button>
+    <button class="btn small primary" id="mesa">Modo mesa</button>
+  </div>
+  <div id="vp"><div id="board"><div id="grid"></div></div></div>
+  <div class="selbar" id="selbar" hidden></div>
+  <div class="mesactl" id="mesactl" hidden>
+    <button class="btn small" id="mrot">↻ Girar</button>
+    <button class="btn small" id="mlock" aria-pressed="true">Mapa fijo</button>
+    <button class="btn small" id="mexit">Salir</button>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
