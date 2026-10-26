@@ -1,6 +1,6 @@
 {
-  "name": "Mesa de la Isla",
-  "short_name": "Mesa",
+  "name": "MesaDnd",
+  "short_name": "MesaDnd",
   "start_url": "./index.html",
   "display": "fullscreen",
   "orientation": "any",

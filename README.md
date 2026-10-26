@@ -1,4 +1,4 @@
-# Mesa de la Isla
+# MesaDnd
 
 Tablero táctil para las partidas de D&D: mapa con foto de fondo dividido en celdas y fichas redondas de jugadores y enemigos.
 
@@ -30,4 +30,4 @@ No abras el `index.html` con doble clic: algunos navegadores bloquean el guardad
 
 ## Datos guardados
 
-Todo se guarda en el navegador de cada dispositivo: ajustes en `localStorage` (clave `mesa-isla-v1`) y las fotos de mapas subidas en IndexedDB (`mesa-isla`). Lo que preparas en el ordenador no pasa solo a la tablet.
+Todo se guarda en el navegador de cada dispositivo: ajustes en `localStorage` (clave `mesa-isla-v1`) y las fotos de mapas subidas en IndexedDB (`mesa-isla`). Estas claves conservan el nombre antiguo a propósito: cambiarlas haría perder lo ya guardado. Lo que preparas en el ordenador no pasa solo a la tablet.
